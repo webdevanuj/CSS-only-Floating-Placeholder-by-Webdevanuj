@@ -1,0 +1,80 @@
+.form-box {
+  background: #FFEEDB;
+  box-shadow: 0 4px 12px rgba(7,34,39,0.12);
+  margin: 10% auto;
+  padding: 3rem 2rem;
+  width: 300px;
+  border-radius: 10px;
+  position: relative;
+}
+
+.form-box:after {
+  content: 'By webdevanuj';
+  font-size: 8px;
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+}
+
+.form-box h4 {
+  color: #343F56;
+  font-size: 24px;
+  font-weight: 300;
+  margin: 0 0 40px 0;
+  text-align: center;
+}
+
+.floating-label {
+  position: relative;
+}
+
+.floating-label input {
+  width: 100%;
+  padding: 0.625rem 1rem;
+  box-sizing: border-box;
+  border-radius: 0.25rem;
+  border: none;
+  border-bottom: 1px solid #ddd;
+  font-size: 16px;
+  outline: none;
+}
+
+.floating-label label {
+  position: absolute;
+  top: 7px;
+  left: 0;
+  padding: 0 12px;
+  font-size: 16px;
+  color: #999;
+  pointer-events: none;
+  transition: .5s;
+}
+
+.floating-label input:focus ~ label,
+.floating-label input:valid ~ label {
+  top: -10px;
+  left: 0;
+  color: #000;
+  font-size: 12px;
+}
+
+.form-box button {
+  background: #343F56;
+  border: 3px solid #343F56;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 8px 30px;
+  margin-top: 25px;
+  margin-left: auto;
+  display: flex;
+  border-radius: 4px;
+  transition: 0.5s all ease;
+  cursor: pointer;
+}
+
+.form-box button:hover {
+  background: none;
+  color: #343F56;
+}
+
